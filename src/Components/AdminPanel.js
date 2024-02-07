@@ -212,13 +212,12 @@ export const AdminPanel = (props) => {
     }
     const handleLogout = () => {
         auth.signOut().then(() => {
-            
+
         }).catch(function (error) {
-           
+
         });
     }
 
-   
     return (
         <div className='container'>
             <br></br>
@@ -229,25 +228,29 @@ export const AdminPanel = (props) => {
                 </div>
             </div>
 
-           <form  className='form-group' onSubmit={handleLogout} > 
-            <h1 >
-                <span class="badge bg-secondary"> 1 minute Admin</span>
-                <button type="submit" className='btn btn-danger btn-md float-end' >
-                    LOGOUT
-                </button>
-            </h1>
+            <form className='form-group' onSubmit={handleLogout} >
+                <h1 >
+                    
+                    <Link to="/viewpanel" class="badge bg-secondary" style={{ textDecoration: 'none' }}>
+                        Admin Panel
+                    </Link>
+                    <button type="submit" className='btn btn-danger btn-md float-end' >
+                        LOGOUT
+                    </button>
+                </h1>
             </form>
+
             <hr></hr>
             {successMsg && <>
                 <div className='success-msg'>{successMsg}</div>
                 <br></br>
             </>}
             <form autoComplete="off" className='form-group' onSubmit={handleAddProducts}>
-                <label>News Title</label>
+                <label>Document Title</label>
                 <textarea type="text" className='form-control' rows="1" required
                     onChange={(e) => setTitle(e.target.value)} value={title}></textarea>
                 <br></br>
-                <label>News Description</label>
+                <label>Document Description</label>
                 <textarea type="text" className='form-control' rows="3" required
                     onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
                 <br></br>
@@ -259,7 +262,7 @@ export const AdminPanel = (props) => {
         <input type="text" className='form-control' required
             onChange={(e) => setCategory(e.target.value)} value={category}></input>
         <br></br> */}
-                <label>Upload News Image</label>
+                <label>Upload Document</label>
                 <input type="file" id="file" className='form-control' required
                     onChange={handleProductImg}></input>
 

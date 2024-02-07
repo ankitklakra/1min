@@ -129,7 +129,7 @@ export const Register = () => {
     <div className='container'>
     <br></br>
     <br></br>
-    <h1>Sign Up</h1>
+    <h1>Register</h1>
     <hr></hr>
     <br></br>
     {successMsg&&<><div className='success-msg'>{successMsg}<br></br></div></>}

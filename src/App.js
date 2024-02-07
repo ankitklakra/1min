@@ -5,6 +5,7 @@ import { Login } from './Components/Login'
 import { Register } from './Components/Register'
 import { AdminPanel } from './Components/AdminPanel'
 import { Notfound } from './Components/Notfound';
+import { ViewPanel } from './Components/ViewPanel';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/adminpanel' element={<AdminPanel />} />
+        <Route path='/viewpanel' element={<ViewPanel />} />
       </Routes>
     
     </BrowserRouter>
