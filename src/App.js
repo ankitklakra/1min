@@ -6,6 +6,7 @@ import { Register } from './Components/Register'
 import { AdminPanel } from './Components/AdminPanel'
 import { Notfound } from './Components/Notfound';
 import { ViewPanel } from './Components/ViewPanel';
+import { NewsPanel } from './Components/NewsPanel';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/adminpanel' element={<AdminPanel />} />
         <Route path='/viewpanel' element={<ViewPanel />} />
+        <Route path='/news' element={<NewsPanel />} />
       </Routes>
     
     </BrowserRouter>

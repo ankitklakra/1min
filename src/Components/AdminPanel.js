@@ -246,11 +246,11 @@ export const AdminPanel = (props) => {
                 <br></br>
             </>}
             <form autoComplete="off" className='form-group' onSubmit={handleAddProducts}>
-                <label>Document Title</label>
+                <label>News Title</label>
                 <textarea type="text" className='form-control' rows="1" required
                     onChange={(e) => setTitle(e.target.value)} value={title}></textarea>
                 <br></br>
-                <label>Document Description</label>
+                <label>News Description</label>
                 <textarea type="text" className='form-control' rows="3" required
                     onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
                 <br></br>
@@ -262,7 +262,7 @@ export const AdminPanel = (props) => {
         <input type="text" className='form-control' required
             onChange={(e) => setCategory(e.target.value)} value={category}></input>
         <br></br> */}
-                <label>Upload Document</label>
+                <label>Upload News Image</label>
                 <input type="file" id="file" className='form-control' required
                     onChange={handleProductImg}></input>
 
