@@ -13,7 +13,7 @@
 
 1. Clone the repository:
 
-git clone <repository-url>
+git clone <https://github.com/ankitklakra/1min>
 
 2. Install dependencies:
 
